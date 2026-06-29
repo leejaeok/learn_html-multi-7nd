@@ -70,6 +70,17 @@ h1.main-title {
 }
 
 .btn {
-  background: transparent;
-  color: #483F57;
+  background: #ef8d73;
+  color: #96e00c;
+  cursor: pointer;
+  border: none;
+  transition: 1s all;
+  padding: 8px 15px;
+  border-radius: 8px;
+  /* 스타일 변경될떄 1초동안 변하겠다는 의미(부드럽게 전환됨).  all은 모든 속성 */
+}
+
+/* 버튼의 마우스를 올렸을떄 스타일 지정 */
+.btn:hover {
+  background-color: cornflowerblue;
 }
