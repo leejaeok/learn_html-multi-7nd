@@ -1,69 +1,59 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
-  </head>
 
-  <body>
-    <h3>Login</h3>
-    <form>
-      ID :
-      <input
-        type="text"
-        name="userId"
-        value=""
-        required
-        placeholder="ID를 입력하세요"
-      /><br />
-      PassWord :
-      <input
-        type="password"
-        name="userPw"
-        required
-        placeholder="패스워드를 입력하세요"
-      /><br />
-      <div>
-        <!-- <input type="submit" /> -->
-        <button type="submit">LOGIN</button>
-      </div>
-      <div>
-        <input id="soccer" type="checkbox" name="hobby" value="soccer" /><label
-          for="soccer"
-          >축구</label
-        >
-        <input
-          id="baseball"
-          type="checkbox"
-          name="hobby"
-          value="baseball"
-        /><label for="baseball">야구</label>
-        <input id="reels" type="checkbox" name="hobby" value="reels"/><label
-          for="reels"
-          >릴스보기</label
-        >
-      </div>
-        <input id="male" type="radio" name="gender" value="male" checked /><label
-          for="male"
-          >남자</label
-        >
-        <input id="female" type="radio" name="gender" value="female"/><label
-          for="female"
-          >여자</label
-        >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form</title>
+  <!-- 내부스타일시트 -->
+  <style>
+    h3 {
+      color: red;
+    }
 
-        <!-- 드롭다운 -->
-         <h2></h2>
-         <div>
-         <label for="food">음식 선택하기</label>
-         <select name="food" id="food"><option value="1">비빔밥</option>
+    .checkbox {
+      color: red;
+    }
+
+    .checkbox-label {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Login</h3>
+  <form>
+    ID :
+    <input type="text" name="userId" value="" required placeholder="ID를 입력하세요" /><br />
+    PassWord :
+    <input type="password" name="userPw" required placeholder="패스워드를 입력하세요" /><br />
+    <div>
+      <!-- <input type="submit" /> -->
+      <button type="submit">LOGIN</button>
+    </div>
+    <div>
+      <input id="soccer" type="checkbox" name="hobby" value="soccer" class="checkbox" /><label for="soccer"
+        class="checkbox-label">축구</label>
+      <input id="baseball" type="checkbox" name="hobby" value="baseball" /><label for="baseball">야구</label>
+      <input id="reels" type="checkbox" name="hobby" value="reels" /><label for="reels">릴스보기</label>
+    </div>
+    <input id="male" type="radio" name="gender" value="male" checked /><label for="male">남자</label>
+    <input id="female" type="radio" name="gender" value="female" /><label for="female">여자</label>
+
+    <!-- 드롭다운 -->
+    <h2></h2>
+    <div>
+      <label for="food">음식 선택하기</label>
+      <select name="food" id="food">
+        <option value="1">비빔밥</option>
         <option value="2">소금빵</option>
         <option value="3">삼겹살</option>
         <option value="4">짬뽕</option>
-        </select>
-         </div>
-      </div>
-    </form>
-  </body>
+      </select>
+    </div>
+    </div>
+  </form>
+</body>
+
 </html>

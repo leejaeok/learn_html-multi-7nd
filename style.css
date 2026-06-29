@@ -1,0 +1,75 @@
+/* @import url(/reset.css); */
+
+/* https://mui.com/ */
+
+img {
+  width: 350px;
+}
+
+div {
+  background-color: blueviolet;
+}
+
+.div_1 {
+  background-color: rgb(30, 130, 189);
+}
+
+.div_2 {
+  background-color: rgb(195, 235, 130);
+}
+
+.item1 {
+  color: crimson;
+}
+
+.item2 {
+  color: darkblue
+}
+
+.item3 {
+  color: fuchsia
+}
+
+#list-title {
+  color: chocolate;
+  border: brown dashed 1px;
+  background-color: beige;
+}
+
+/* .main-title {
+  font-size: 30px;
+} */
+
+h1.main-title {
+  font-size: 20px;
+  background: #22C1C3;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+/* .list-wrap li {
+  background-color: palegreen;
+} */
+
+/* list-wrap > li 꺽쇠를 사용하면 직계만 적용됨 */
+/* .list-wrap>li {
+  background-color: palegreen;
+} */
+
+/* + 인접형제만 적용 */
+.list-wrap+li {
+  background-color: palegreen;
+}
+
+/* ~ 인접형제전체 적용 */
+.top-item~li {
+  margin-top: 20px;
+}
+
+.list-wrap>p {
+  background-color: palegreen;
+}
+
+.btn {
+  background: transparent;
+  color: #483F57;
+}
